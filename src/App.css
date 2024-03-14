@@ -1,38 +1,154 @@
-.App {
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #382a41;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+} 
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: #f3eaf7;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #e2cde4;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #e2cde4;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border: 1px solid #d7837d;
+  border-radius: 6px;
+}
+
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #d7837d;
+}
+
+footer .copyright {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navbar {
+  background-color: #382a41;
   align-items: center;
+}
+
+#navbarNav {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav {
+  gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item {
+  padding-right: 20px;
+}
+
+
+
+
+#pageHeader.blogHeader {
+  background-image: url(/src/images/diosa2.webp);
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blogBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blogImage {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog .blogDetails {
+  width: 50%;
+}
+
+#blog .blogDetails a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #f3eaf7;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blog .blogDetails a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #f3eaf7;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blogDetails a:hover {
+  color: #d7837d;
+}
+
+#blog .blogDetails a:hover::after {
+  background-color: #d7837d;
+}
+
+#blog .blogBox h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: 1;
 }
